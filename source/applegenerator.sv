@@ -57,11 +57,12 @@ if (~reset) begin
 apple_cord <= 8'b11000101;
 appleSet <= 1; 
 apple <= 0;
+end
+
 else begin
     apple_cord <= next_apple_cord;
     appleSet <= next_apple_set;
     apple <= nextApple;
-end
 end
 end
 
