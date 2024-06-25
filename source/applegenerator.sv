@@ -25,7 +25,7 @@ module applegenerator (
         // next_apple_set = 0;
         // end
 
-        if (goodColl == 1 && appleSet == 0) begin
+        if (goodColl == 1 || appleSet == 0) begin
             for (int i = 0; i < 50; i++) begin
                 if (randCord == body[i]) begin
                     randError = 1;
