@@ -8,7 +8,7 @@
 // I created a separate test bench for the synchronizer but could have also created
 // a top-level test-bench with both modules
 
-module AppleGeneratorTestBench ();
+module tb_applegenerator ();
 
 logic [3:0] x, y, randX, randY;
 logic goodColl, clk, reset, s_reset, apple;
@@ -18,7 +18,7 @@ logic [49:0][7:0] body;
 
 //instantiate device being tested
 
-applegenerator dut(x, y, randX, randY, goodColl, clk, reset, s_reset, body); // design under test module
+applegenerator dut(x, y, randX, randY, goodColl, clk, reset, s_reset, apple, body); // design under test module
 
 initial begin
 

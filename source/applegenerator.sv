@@ -18,7 +18,6 @@ output logic apple
 logic [7:0] apple_cord, next_apple_cord; 
 logic Signal;
 logic appleSet, next_apple_set, nextApple;
-synchronizer toNextApple (.clk(clk), .reset(reset), .goodColl(goodColl), .Signal(Signal));
 
 always_comb 
 begin

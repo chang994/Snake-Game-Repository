@@ -1,10 +1,13 @@
 
 
 module synchronizer (
+    
     input logic clk, goodColl, reset,
-    output logic edgee);
+    output logic edgee
+    
+);
 
-    logic [1:0] signal;
+logic [1:0] signal;
 
 always_ff @(posedge clk, negedge reset) begin
 if (~reset == 1) begin
