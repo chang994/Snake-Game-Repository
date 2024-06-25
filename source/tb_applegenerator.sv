@@ -70,7 +70,7 @@ module tb_applegenerator ();
     endtask 
 
     // DUT Portmap___________________________________________________________________________________________________________________________
-    collision DUT (
+    applegenerator DUT (
         .x(tb_x),
         .y(tb_y),
         .randX(tb_randX),
