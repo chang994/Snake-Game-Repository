@@ -5,7 +5,7 @@
 
 # Specify the name of the top level file
 # (do not include the source folder in the name)
-TOP_FILE		:= shift_reg.sv
+TOP_FILE		:= applegenerator_and_border.sv
 
 # Specify the name of component or sub-module files
 # (do not include the source folder in the name)
@@ -13,7 +13,7 @@ COMPONENT_FILES	:=
 
 # Specify the top level testbench to be simulated
 # (do not include the source folder in the name)
-TB 				:= tb_shift_reg.sv
+TB 				:= tb_applegenerator.sv
 
 # Directories where source code is located
 SRC 			:= source
