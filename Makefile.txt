@@ -5,7 +5,7 @@
 
 # Specify the name of the top level file
 # (do not include the source folder in the name)
-TOP_FILE		:= applegenerator_and_border.sv
+TOP_FILE		:= applegenerator.sv
 
 # Specify the name of component or sub-module files
 # (do not include the source folder in the name)
