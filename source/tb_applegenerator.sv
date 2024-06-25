@@ -24,7 +24,7 @@ module tb_applegenerator ();
     logic tb_goodColl;
     logic tb_clk;
     logic tb_reset;
-    logic [49:0] tb_body [7:0];
+    logic [49:0][7:0] tb_body;
 
     // DUT Outputs
     logic tb_apple;
