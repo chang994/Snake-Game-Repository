@@ -16,5 +16,13 @@ module top (
   output logic txclk, rxclk,
   input  logic txready, rxready
 );
-  
+logic goodCollTemp;
+synchronizer toNextApple (.clk(clk), .reset(reset), .goodColl(goodColl), .edgee(goodCollTemp));
+// applegenerator ag1 (
+
+// input logic [3:0] x, y, randX, randY, 
+// input logic goodColl, clk, reset, s_reset, 
+// input logic [50 - 1:0][7:0] body,
+// output logic apple
+
 endmodule
