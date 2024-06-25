@@ -24,7 +24,7 @@ module tb_applegenerator ();
     logic tb_goodColl;
     logic tb_clk;
     logic tb_reset;
-    logic tb_body [49:0][7:0];
+    logic [49:0] tb_body [7:0];
 
     // DUT Outputs
     logic tb_apple;
@@ -75,7 +75,7 @@ module tb_applegenerator ();
         .y(tb_y),
         .randX(tb_randX),
         .randY(tb_randY),
-        .goodColl(goodColl),
+        .goodColl(tb_goodColl),
         .clk(tb_clk),
         .reset(tb_reset),
         .s_reset(tb_s_reset),
@@ -100,7 +100,7 @@ module tb_applegenerator ();
         // Initialize test bench signals
         tb_reset = 1;
         for(int i = 0; i < 50; i++) begin
-            tb_body[i] = 8'b0;
+            tb_body[i] = 8'b00000000;
         end
         tb_body[0] = 8'b01000111; //102 on grid
         tb_body[1] = 8'b01000111; //88 on grid
