@@ -10,7 +10,7 @@ module applegenerator (
 
 input logic [3:0] x, y, randX, randY, 
 input logic goodColl, clk, reset, s_reset, // s_reset: like n_reset, synchronizer reset for apple
-input [50 - 1:0][7:0] logic  body,
+input logic [50 - 1:0][7:0] body,
 output logic apple
 
 );
