@@ -71,16 +71,16 @@ module tb_applegenerator ();
 
     // DUT Portmap___________________________________________________________________________________________________________________________
     collision DUT (
-        .x(tb_x);
-        .y(tb_y);
-        .randX(tb_randX);
-        .randY(tb_randY);
-        .goodColl(goodColl);
-        .clk(tb_clk);
-        .reset(tb_reset);
-        .s_reset(tb_s_reset);
-        .apple(tb_apple);
-        .body(tb_body);
+        .x(tb_x),
+        .y(tb_y),
+        .randX(tb_randX),
+        .randY(tb_randY),
+        .goodColl(goodColl),
+        .clk(tb_clk),
+        .reset(tb_reset),
+        .s_reset(tb_s_reset),
+        .apple(tb_apple),
+        .body(tb_body)
     ); 
 
     // Clock generation block___________________________________________________________________________________________________________________________
