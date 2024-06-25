@@ -10,7 +10,8 @@ module applegenerator (
 
 input logic [3:0] x, y, randX, randY, 
 input logic goodColl, clk, reset, s_reset, 
-input logic [7:0][MAX_LENGTH:0]body,
+input logic [MAX_LENGTH - 1:0][7:0] body,
+parameter int MAX_LENGTH = 50;
 output logic apple
 
 );

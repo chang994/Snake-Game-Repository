@@ -12,12 +12,13 @@ module AppleGeneratorTestBench ();
 
 logic [3:0] x, y, randX, randY;
 logic goodColl, clk, reset, s_reset, apple;
-logic [7:0][MAX_LENGTH:0]body;
+logic [49:0][7:0] body;
+
 
 
 //instantiate device being tested
 
-applegenerator dut(x; y; randX; randY; goodColl; clk; reset; s_reset; body); // design under test module
+applegenerator dut(x, y, randX, randY, goodColl, clk, reset, s_reset, body); // design under test module
 
 initial begin
 
