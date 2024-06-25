@@ -10,7 +10,7 @@ module applegenerator (
 
 input logic [3:0] x, y, randX, randY, 
 input logic goodColl, clk, reset, s_reset, 
-input logic [50 - 1:0][7:0] body,
+input logic [MAX_LENGTH - 1:0][7:0] body,
 output logic apple
 
 );
@@ -38,7 +38,7 @@ if(goodColl == 1 && appleSet == 0) begin
     next_apple_cord = {randX, randY};
     next_apple_set = 1;
     
-    for(int i = 0; i<50; i++) begin
+    for(int i = 0; i<MAX_LENGTH; i++) begin
         if(next_apple_cord == body[i]) begin
             next_apple_set = 0;
         end
