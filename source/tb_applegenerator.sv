@@ -24,19 +24,19 @@ initial begin
 
 x = 5; y = 8; randX = 5; randY = 8; goodColl = 1; clk = 1; reset = 0; s_reset = 0; 
 @(posedge clk);
-assert (apple === 1) else $error("110 failed.")
+assert (apple === 1) else $error("110 failed.");
 
 x = 5; y =8; randX = 7; randY = 9; goodColl = 0; clk = 0; reset = 1; s_reset = 1; 
 @(posedge clk);
-assert (apple === 0) else $error("110 failed.")
+assert (apple === 0) else $error("110 failed.");
 
 x = 5; y = 8; randX = 5; randY = 8; goodColl = 0; clk = 0; reset = 1; s_reset = 1; 
 @(posedge clk);
-assert (apple === 0) else $error("110 failed.")
+assert (apple === 0) else $error("110 failed.");
 
 x = 5; y =8; randX = 7; randY = 9; goodColl = 1; clk = 1; reset = 0; s_reset = 0; 
 @(posedge clk);
-assert (apple === 1) else $error("110 failed.")
+assert (apple === 1) else $error("110 failed.");
 
 // Add more test cases below
 $finish; 
