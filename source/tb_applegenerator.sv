@@ -171,7 +171,7 @@ module tb_applegenerator ();
         tb_randY = 8;
         tb_goodColl = 1;
         tb_s_reset = 0;
-        tb_reset = 0;
+        tb_reset = 1;
         tb_apple_exp = 0; 
         check_outputs(tb_apple_exp);
 
@@ -203,7 +203,7 @@ module tb_applegenerator ();
         tb_randY = 8;
         tb_goodColl = 1;
         tb_s_reset = 0;
-        tb_reset = 0;
+        tb_reset = 1;
 
         @(posedge tb_clk);
         tb_apple_exp = 0; 

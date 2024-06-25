@@ -19,7 +19,7 @@ module applegenerator (
         next_apple_cord = apple_cord;
         nextApple = apple;
         randError = 0;
-        randCord = {randX, randY}
+        randCord = {randX, randY};
 
         // if (goodColl == 1) begin
         // next_apple_set = 0;
