@@ -167,8 +167,8 @@ module tb_applegenerator ();
         tb_body[3] = 8'b01000101; //60 on grid
         tb_x = 5;
         tb_y = 8;
-        tb_randX = 5;
-        tb_randY = 8;
+        tb_randX = 5; //0101
+        tb_randY = 8; //1000
         tb_goodColl = 1;
         tb_s_reset = 0;
         tb_reset = 1;

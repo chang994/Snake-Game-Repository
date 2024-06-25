@@ -11,8 +11,8 @@ module applegenerator (
     output logic apple
 );
 
-    logic [7:0] apple_cord, next_apple_cord;
-    logic appleSet, next_apple_set, nextApple, randError, randCord;
+    logic [7:0] apple_cord, next_apple_cord, randCord;
+    logic appleSet, next_apple_set, nextApple, randError;
 
     always_comb begin
         next_apple_set = appleSet;
