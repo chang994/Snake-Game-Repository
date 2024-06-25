@@ -12,12 +12,14 @@ module applegenerator (
 );
 
     logic [7:0] apple_cord, next_apple_cord;
-    logic appleSet, next_apple_set, nextApple;
+    logic appleSet, next_apple_set, nextApple, randError, randCord;
 
     always_comb begin
         next_apple_set = appleSet;
         next_apple_cord = apple_cord;
         nextApple = apple;
+        randError = 0;
+        randCord = {randX, randY}
 
         // if (goodColl == 1) begin
         // next_apple_set = 0;
@@ -25,12 +27,16 @@ module applegenerator (
 
         if (goodColl == 1 && appleSet == 0) begin
             for (int i = 0; i < 50; i++) begin
-                if ({randX, randY} == body[i]) begin
-                    next_apple_set = 0;
+                if (randCord == body[i]) begin
+                    randError = 1;
                 end
             end
-            if (next_apple_set == 1) begin
+            if (randError == 0) begin
+                next_apple_set = 1;
                 next_apple_cord = {randX, randY};
+            end
+            else begin
+                next_apple_set = 0;
             end
         end
 
