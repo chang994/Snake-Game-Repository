@@ -10,8 +10,8 @@
 
 module AppleGeneratorTestBench ();
 
-logic [3:0] x, y, randX, randY, 
-logic goodColl, clk, reset, s_reset, apple,
+logic [3:0] x, y, randX, randY;
+logic goodColl, clk, reset, s_reset, apple;
 logic [7:0][MAX_LENGTH:0]body;
 
 
@@ -38,6 +38,6 @@ x = 5; y =8; randX = 7; randY = 9; goodColl = 1; clk = 1; reset = 0; s_reset = 0
 assert (apple === 1) else $error("110 failed.")
 
 // Add more test cases below
-
+$finish; 
 end
 endmodule
