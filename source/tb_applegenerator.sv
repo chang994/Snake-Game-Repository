@@ -176,6 +176,7 @@ module tb_applegenerator ();
         check_outputs(tb_apple_exp);
 
         @(posedge tb_clk);
+        @(posedge tb_clk);
         tb_apple_exp = 1; 
         check_outputs(tb_apple_exp); // checking whether apple is there
 
